@@ -6,5 +6,5 @@ git submodule foreach 'git fetch && git status && git pull origin $(git rev-pars
 
 # Add and commit submodule updates in the main project
 git add .
-git commit -m "Update submodules to latest commits"
+git commit -m "\n\n\n Update submodules to latest commits\n\n"
 git push

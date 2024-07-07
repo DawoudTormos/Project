@@ -4,6 +4,3 @@
 [submodule "SE-subModule-b"]
 	path = SE-subModule-b
 	url = https://github.com/DawoudTormos/SE-subModule-b.git
-[submodule "testModuleOtherAccount"]
-	path = testModuleOtherAccount
-	url = https://github.com/hadigghazi/Resturant.git

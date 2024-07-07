@@ -5,7 +5,7 @@ git fetch
 git submodule foreach 'git fetch && git status && git pull origin $(git rev-parse --abbrev-ref HEAD)'
 
 
-echo "\n\n\n updating changes to the main repo"
+echo -e "\n\n\n updating changes to the main repo\n\n"
 # Add and commit submodule updates in the main project
 git add .
 git commit -m "Update submodules to latest commits"

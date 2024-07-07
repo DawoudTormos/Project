@@ -1,14 +1,10 @@
-echo "Today is " `date`
-echo ""
-#echo -e "\nenter the path to directory"
-#read the_path
+# Fetch changes in the main project
+git fetch
 
-#echo -e "\n you path has the following files and folders: "
-#ls $the_path
+# Loop through each submodule and check for updates
+git submodule foreach 'git fetch && git status && git pull origin $(git rev-parse --abbrev-ref HEAD)'
 
-#git log
-read the_path
-git log --oneline
-echo $the_path
-echo $the_path
-echo $the_path
+# Add and commit submodule updates in the main project
+git add .
+git commit -m "Update submodules to latest commits"
+git push
